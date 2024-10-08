@@ -64,6 +64,10 @@ public class Main {
             System.out.println("Introduce la nueva edad: ");
             cliente.setEdad(scanner.nextInt());
         }
+        else if (atributo.equals("email")) {
+            System.out.println("Introduce la nueva edad: ");
+            cliente.setEmail(scanner.nextLine());
+        }
         customersRepo.update(id, cliente);
     }
 

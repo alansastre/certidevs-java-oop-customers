@@ -61,6 +61,12 @@ public class CustomerRepository {
         if (customer.getEdad() >= 18 && customer.getEdad() <= 110) {
             cliente.setEdad(customer.getEdad());
         }
+
+        if (customer.getEmail() != null
+                && customer.getEmail().contains("@")
+                && customer.getEmail().contains(".")) {
+            cliente.setEmail(customer.getEmail());
+        }
     }
 
 
